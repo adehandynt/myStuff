@@ -1,0 +1,65 @@
+<ActionBar>
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
+    </ActionItem>
+    <Label text="Home"></Label>
+</ActionBar>
+<ScrollView orientation="vertical">
+    <GridLayout class="m-15">
+        <StackLayout class="p-20">
+            <Card:CardView class="cardStyle" margin="10" elevation="30" radius="40">
+                <StackLayout class="cardContent">
+                    <Label text="Asset Worth" />
+                    <Label class="assetWorth" text="$ 450.00,00" />
+                    <GridLayout columns="*,*" rows="*,*" class="m-15">
+
+                        <Card:CardView class="cardStyle" col="0" row="0" margin="10" elevation="10" radius="40">
+                            <StackLayout class="cardContent">
+                                <Label class="stuffFont" text="Stored" />
+                            </StackLayout>
+                        </Card:CardView>
+                        <Card:CardView class="cardStyle" col="1" row="0" margin="10" elevation="10" radius="40">
+                            <StackLayout class="cardContent">
+                                <Label class="stuffFont" text="Miss" />
+                            </StackLayout>
+                        </Card:CardView>
+                        <Card:CardView class="cardStyle" col="0" row="1" margin="10" elevation="10" radius="40">
+                            <StackLayout class="cardContent">
+                                <Label class="stuffFont" text="Maintenance" />
+                            </StackLayout>
+                        </Card:CardView>
+                        <Card:CardView class="cardStyle" col="1" row="1" margin="10" elevation="10" radius="40">
+                            <StackLayout class="cardContent">
+                                <Label class="stuffFont" text="Lend" />
+                            </StackLayout>
+                        </Card:CardView>
+
+                    </GridLayout>
+                </StackLayout>
+
+            </Card:CardView>
+            <Card:CardView class="cardStyle" margin="10" elevation="30" radius="40">
+                <StackLayout class="cardContent">
+                    <Label text="Graph" class="m-b-10" />
+                    <GridLayout rows="*" height="500px">
+                        <RadPieChart allowAnimation="true" row="0">
+                            <PieSeries tkPieSeries selectionMode="DataPoint" expandRadius="0.08" outerRadiusFactor="0.9" [items]="pieSource" valueProperty="Amount" legendLabel="Brand"></PieSeries>
+                            <RadLegendView tkPieLegend position="Right" title="Brands" offsetOrigin="TopRight" width="90" enableSelection="true">
+                            </RadLegendView>
+                        </RadPieChart>
+                    </GridLayout>
+                </StackLayout>
+            </Card:CardView>
+        </StackLayout>
+    </GridLayout>
+
+</ScrollView>
