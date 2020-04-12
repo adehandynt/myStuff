@@ -1,0 +1,9 @@
+D:\native_project\NEW\myStuff\platforms\android\app\src\main\assets\app\0.js
+D:\native_project\NEW\myStuff\platforms\android\app\src\main\assets\app\1.js
+D:\native_project\NEW\myStuff\platforms\android\app\src\main\assets\app\2.js
+D:\native_project\NEW\myStuff\platforms\android\app\src\main\assets\app\3.js
+D:\native_project\NEW\myStuff\platforms\android\app\src\main\assets\app\4.js
+D:\native_project\NEW\myStuff\platforms\android\app\src\main\assets\app\bundle.js
+D:\native_project\NEW\myStuff\platforms\android\app\src\main\assets\app\runtime.js
+D:\native_project\NEW\myStuff\platforms\android\app\src\main\assets\app\tns-java-classes.js
+D:\native_project\NEW\myStuff\platforms\android\app\src\main\assets\app\vendor.js

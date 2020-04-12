@@ -1,0 +1,29 @@
+.page {
+    background-color: rgb(237, 237, 237);
+}
+
+.cardStyle {
+    background-color: rgb(255, 255, 255);
+    color: rgb(24, 20, 20);
+}
+
+.cardContent {
+    padding: 20;
+    color: rgb(126, 126, 126);
+    font-weight: 500;
+    font-size: 16;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.assetWorth {
+    text-align: center;
+    font-size: 30;
+    color: rgb(170, 169, 169);
+    margin-top: 10;
+}
+
+.stuffFont {
+    font-weight: bold;
+    color: rgb(156, 156, 156);
+    font-size: 10;
+}
